@@ -1,0 +1,54 @@
+# Build Outputs
+build/
+dist/*.zip
+dist/*.so
+module/target/
+java/out/
+app/build/
+.gradle/
+*.qbc
+
+# Binaries & Shared Libraries
+*.so
+*.a
+*.o
+*.obj
+*.exe
+*.dll
+*.bin
+*.zip
+*.tar.gz
+phantom-*
+psh_*
+test_tramp_*
+
+# IDE & Editor Files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.siv
+*.bak
+.DS_Store
+Thumbs.db
+
+# Go Binaries (if any in source dirs)
+go/daemon/daemon
+go/hub/hub
+go/lsp/lsp
+go/updater/updater
+go/bootstrap/bootstrap
+go/bundler/bundler
+
+# Environment & Secrets (Standard Practice)
+.env
+.env.local
+*.key
+*.pem
+*.p12
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

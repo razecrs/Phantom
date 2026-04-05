@@ -1,0 +1,53 @@
+# phantom shell prompt config
+# copy to ~/.phantom/prompt.toml and edit
+
+# built-in themes: phantom-dark, phantom-light, minimal, powerline, retro
+# set theme = "custom" to use the segments block below
+theme = "phantom-dark"
+
+# show prompt char and input on a separate line from segments
+two_line = true
+
+# nerd font icons (set false if your font doesn't support them)
+nerd_fonts = true
+
+# prompt character color — hex RGB
+prompt_char_ok  = "#59E39F"   # mint green on success
+prompt_char_err = "#F87171"   # red on non-zero exit
+
+# ── custom segments ──────────────────────────────────────────────
+# only used when theme = "custom"
+# available types: user, host, cwd, git, time, exit, battery, ph_status, custom
+
+[[segment]]
+type      = "ph_status"   # shows ● if phantom is attached, ○ if not
+fg        = "#0A0A0A"
+bg        = "#8B5CF6"     # violet
+powerline = true
+icon      = ""           # nerd font phantom icon (optional)
+
+[[segment]]
+type      = "cwd"
+fg        = "#FFFFFF"
+bg        = "#1E1E2E"
+powerline = true
+icon      = ""
+
+[[segment]]
+type      = "git"
+fg        = "#F5C2E7"
+bg        = "#31314A"
+powerline = true
+icon      = ""
+
+[[segment]]
+type      = "battery"
+fg        = "#A6E3A1"
+bg        = "#1E1E2E"
+powerline = false
+
+[[segment]]
+type      = "time"
+fg        = "#CDD6F4"
+bg        = "#1E1E2E"
+powerline = false

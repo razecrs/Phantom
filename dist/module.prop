@@ -1,0 +1,7 @@
+id=phantom
+name=Phantom
+version=v0.1.0
+versionCode=1
+author=raze
+description=JS-scriptable native + Java hooking platform. Frida-killer.
+updateJson=

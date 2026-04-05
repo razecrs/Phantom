@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Phantom" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/surface</item>
+        <item name="colorPrimaryVariant">@color/bg_dark</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+</resources>

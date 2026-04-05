@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg_dark">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="@color/surface"
+            app:titleTextColor="@color/text_primary"
+            app:subtitleTextColor="@color/text_secondary"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView android:id="@+id/tvPatched"
+        android:layout_width="match_parent" android:layout_height="24dp"
+        android:background="@color/accent" android:gravity="center"
+        android:text="⚡ RESPONSE PATCHED BY PHANTOM" android:textColor="#000"
+        android:textSize="11sp" android:textStyle="bold" android:visibility="gone"/>
+
+    <TextView android:id="@+id/tvMeta"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/surface" android:fontFamily="monospace"
+        android:padding="12dp" android:textColor="@color/text_secondary" android:textSize="12sp"/>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="#1FFFFFFF"/>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:padding="12dp">
+        <TextView android:id="@+id/tvBody"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:fontFamily="monospace" android:textColor="@color/text_primary"
+            android:textSize="12sp"/>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+-keep class dev.phantom.ipc.DaemonApi$** { *; }
+-keepattributes Signature,*Annotation*
+-dontwarn okhttp3.**
+-dontwarn okio.**
