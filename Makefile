@@ -38,7 +38,7 @@ CARGO     := C:/Users/raze/.cargo/bin/cargo.exe
 # Force the GNU toolchain's rustc so Android cross-targets are found.
 # VS Code installs an MSVC rustc earlier in PATH which shadows the
 # correct one; RUSTC overrides cargo's toolchain resolution.
-RUSTC_GNU := C:/Users/raze/.rustup/toolchains/stable-x86_64-pc-windows-gnu/bin/rustc.exe
+RUSTC_GNU := C:/Users/uruser/.rustup/toolchains/stable-x86_64-pc-windows-gnu/bin/rustc.exe
 export RUSTC := $(RUSTC_GNU)
 
 # ── Rust module — linkers/AR in module/.cargo/config.toml ─────
